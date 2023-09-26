@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#87CEEB"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+       android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="30dp"
+        ></TextView>
+    <EditText
+        android:textSize="20sp"
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"
+        ></EditText>
+    <EditText
+        android:textSize="20sp"
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email Address"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        >
+    </EditText>
+    <EditText
+        android:textSize="20sp"
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        ></EditText>
+    <EditText
+        android:textSize="20sp"
+        android:id="@+id/confirmEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        ></EditText>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+      <Button
+
+          android:id="@+id/sign_upBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:text="Sign Up"
+          android:backgroundTint="#E91E63"
+          android:layout_centerHorizontal="true"
+          ></Button>
+      <ProgressBar
+          android:visibility="gone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_margin="10dp"
+          android:id="@+id/loadingBar"
+          ></ProgressBar>
+  </RelativeLayout>
+</LinearLayout>
